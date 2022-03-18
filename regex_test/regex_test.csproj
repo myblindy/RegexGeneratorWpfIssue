@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>DRDB_Import_Gui</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <LangVersion>preview</LangVersion>
+    <AnalysisMode>recommended</AnalysisMode>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="NPOI" Version="2.5.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="Lamar" Version="7.1.1" />
+    <PackageReference Include="MvvmDialogs" Version="8.0.0" />
+    <PackageReference Include="ReactiveUI.WPF" Version="17.1.17" />
+    <Page Include="App.xaml" />
+
+    <Using Include="DynamicData" />
+    <Using Include="MvvmDialogs" />
+    <Using Include="MvvmDialogs.FrameworkDialogs.OpenFile" />
+    <Using Include="MvvmDialogs.FrameworkDialogs.SaveFile" />
+    <Using Include="ReactiveUI" />
+    <Using Include="Lamar" />
+
+    <Using Include="System" />
+    <Using Include="System.Collections.Concurrent" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Collections.ObjectModel" />
+    <Using Include="System.IO" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Text" />
+    <Using Include="System.Threading.Tasks" />
+    <Using Include="System.Windows.Data" />
+    <Using Include="System.Windows.Input" />
+  </ItemGroup>
+
+
+</Project>
